@@ -391,8 +391,22 @@
     <div class="blackdrop is-hidden" data-modal>
         <div class="modal">
             <button class="modal-btn-close" data-modal-close>X</button>
-            <p class="modal-title">Title</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, quo.</p>
+            <h3 class="modal-title">Оставьте свои данные, мы вам перезвоним</h3>
+            <form class="form-flex">
+                <label class="lable-name" for="name">Имя</label>
+                <input class="border-form" type="text" name="name" id="name" pattern="^[А-Яа-яЁё\s]+$" autocomplete="off">
+                <label class="lable-name" for="phone">Телефон</label>
+                <input class="border-form" type="tel" name="phone" id="phone" pattern="[0-9]{13}" autocomplete="off">
+                <label class="lable-name" for="mail">Почта</label>
+                <input class="border-form" type="text" id="mail" autocomplete="off">
+                <label class="lable-name" for="comments">Комментарий</label>
+                <textarea class="border-form" id="comments" placeholder="Введите текст"></textarea>
+                <div class="div-chek">
+                    <input type="checkbox" class="chek">
+                    <p class="chek-text">Соглашаюсь с рассылкой и принимаю Условия договора</p>
+                </div>
+                <button type="submit" class="hero-button">Отправить</button>
+            </form>
         </div>
     </div>
     <script src="./js/modal.js"></script>
