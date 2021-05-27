@@ -388,24 +388,46 @@
             </div>
         </div>
     </footer>
-    <div class="blackdrop is-hidden" data-modal>
+    <div class="blackdrop" data-modal>
         <div class="modal">
-            <button class="modal-btn-close" data-modal-close>X</button>
+            <button class="modal-btn-close" data-modal-close>
+                <svg class="modal-close-svg">
+                    <use href="./images/icons/sprite.svg#icon-close"></use>
+                </svg>
+            </button>
             <h3 class="modal-title">Оставьте свои данные, мы вам перезвоним</h3>
             <form class="form-flex">
                 <label class="lable-name" for="name">Имя</label>
-                <input class="border-form" type="text" name="name" id="name" pattern="^[А-Яа-яЁё\s]+$" autocomplete="off">
-                <label class="lable-name" for="phone">Телефон</label>
-                <input class="border-form" type="tel" name="phone" id="phone" pattern="[0-9]{13}" autocomplete="off">
-                <label class="lable-name" for="mail">Почта</label>
-                <input class="border-form" type="text" id="mail" autocomplete="off">
-                <label class="lable-name" for="comments">Комментарий</label>
-                <textarea class="border-form" id="comments" placeholder="Введите текст"></textarea>
-                <div class="div-chek">
-                    <input type="checkbox" class="chek">
-                    <p class="chek-text">Соглашаюсь с рассылкой и принимаю Условия договора</p>
+                <div class="form-div-field">
+                    <input class="border-form" type="text" name="name" id="name" pattern="^[А-Яа-яЁё\s]+$" autocomplete="off">
+                    <svg class="form-svg">
+                        <use href="./images/icons/sprite.svg#icon-person-form"></use>
+                    </svg>
                 </div>
-                <button type="submit" class="hero-button">Отправить</button>
+                <label class="lable-name" for="phone">Телефон</label>
+                <div class="form-div-field">
+                    <input class="border-form" type="tel" name="phone" id="phone" pattern="[0-9]{13}" autocomplete="off">
+                    <svg class="form-svg">
+                        <use href="./images/icons/sprite.svg#icon-phone-form"></use>
+                    </svg>
+                </div>
+                <label class="lable-name" for="mail">Почта</label>
+                <div class="form-div-field">
+                    <input class="border-form" type="text" id="mail" autocomplete="off">
+                    <svg class="form-svg">
+                        <use href="./images/icons/sprite.svg#icon-email-form"></use>
+                    </svg>
+                </div>
+                <label class="lable-name" for="comments">Комментарий</label>
+                <textarea class="border-texterea" id="comments" placeholder="Введите текст"></textarea>
+                <div class="div-chek">
+                    <label  class="chek-text">
+                        <input type="checkbox" class="chek visually-hidden">
+                        <span class="chek-span"></span>
+                        Соглашаюсь с рассылкой и принимаю &nbsp; <a href="" class="form-link">Условия договора</a>
+                    </label>
+                </div>
+                <button type="submit" class="hero-button form-button">Отправить</button>
             </form>
         </div>
     </div>
