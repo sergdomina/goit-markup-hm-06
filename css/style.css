@@ -623,6 +623,9 @@ color: var(--accent-blue);
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
+.footer-border-mail{
+
+}
 /*modal*/
 
 .blackdrop {
@@ -748,7 +751,7 @@ input:invalid{
     border-color:  var(--accent-blue);
 }
 
-.label-name{
+.lable-name{
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
